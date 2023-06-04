@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:TDMPW_412_2P_EX_NHBA"
+             x:Class="TDMPW_412_2P_EX_NHBA.Bienvenida"
+             Title="Bienvenida"
+             SelectedTabColor="Green">
+    <ContentPage Title="Inicio" IconImageSource="startt.png">
+        <ScrollView>
+        <Grid RowDefinitions=".18*, .14*, .14*, .40*, .20*, .14*, .40*">
+            <Frame Grid.RowSpan="2"
+                   BorderColor="White"
+                   HeightRequest="170"
+                   HasShadow="True"
+                   ></Frame>
+            <Label Grid.Row="1"
+                   Margin="10,0,0,0"
+                   FontSize="35"
+                   Text="Bienvenido (a) ☕️"
+                   FontAttributes="Bold"
+                   FontFamily="coolvetica"
+                   VerticalOptions="Start"
+                   />
+            <HorizontalStackLayout Grid.Row="1" VerticalOptions="End">
+            <Image Margin="10,0,0,0">
+                <Image.Source>
+                    <FontImageSource
+                        FontFamily="bienvenida"
+                        Size="20"
+                        Glyph="&#xE800;"
+                        Color="Grey"></FontImageSource>
+
+                </Image.Source>
+            </Image>
+            <Label Margin="10,0,30,0"
+                   Text="Ingresar"
+                   FontSize="Medium"
+                   VerticalTextAlignment="End"
+                   />
+
+            <Image Margin="10,0,0,0">
+                <Image.Source>
+                    <FontImageSource
+                        FontFamily="bienvenida"
+                        Size="20"
+                        Glyph="&#xE801;"
+                        Color="Grey"></FontImageSource>
+
+                </Image.Source>
+            </Image>
+            <Label Margin="10,0,20,0"
+                   Text="Inbox"
+                   FontSize="Medium"
+                   VerticalTextAlignment="End"
+                   />
+            <Image Margin="10,0,70,0">
+                <Image.Source>
+                    <FontImageSource
+                        FontFamily="bienvenida"
+                        Size="20"
+                        Glyph="&#xE802;"
+                        Color="Grey"></FontImageSource>
+
+                </Image.Source>
+            </Image>
+            <Image Margin="10,0,0,0">
+                <Image.Source>
+                    <FontImageSource
+                        FontFamily="bienvenida"
+                        Size="20"
+                        Glyph="&#xE803;"
+                        Color="Grey"></FontImageSource>
+
+                </Image.Source>
+            </Image>
+            </HorizontalStackLayout>
+            <Label Grid.Row="2"
+                   Margin="10,20,0,0"
+                   FontAttributes="Bold"
+                   TextColor="Grey"
+                   FontSize="Micro"
+                   FontFamily="Helvetica Neu"
+                   Text="STABURCKS REWARDS"/>
+
+            <HorizontalStackLayout Grid.Row="3">
+            <Frame Grid.Row="3"
+                   Margin="10"
+                   IsClippedToBounds="True"
+                   CornerRadius="0"
+                   WidthRequest="320"
+                   HeightRequest="210"
+                   BorderColor="White"
+                   >
+                <Image Grid.Row="3"
+                        Source="cafe.jpg"
+                       WidthRequest="320"
+                       HeightRequest="320"
+                       
+                    ></Image>
+            </Frame>
+
+                <Frame Grid.Row="3"
+                   Margin="10"
+                   IsClippedToBounds="True"
+                   CornerRadius="0"
+                   WidthRequest="320"
+                   HeightRequest="210"
+                   BorderColor="White"
+                   >
+                <Image Grid.Row="3"
+                        Source="bote.jpg"
+                       WidthRequest="320"
+                       HeightRequest="320"
+                    ></Image>
+            </Frame>
+                </HorizontalStackLayout>
+            <HorizontalStackLayout Grid.Row="4" VerticalOptions="Center">
+            <Label Grid.Row="4"
+                   Margin="10,30,10,0"
+                   FontSize="Default"
+                   FontFamily="Helvetica Neu"
+                   FontAttributes="Bold"
+                   Text="Obtén bebidas gratis, alimentos y más"
+                />
+                <Label Grid.Row="4"
+                   Margin="25,30,0,0"
+                   FontSize="Default"
+                   FontFamily="Helvetica Neu"
+                   FontAttributes="Bold"
+                   Text="Descuentos en toda la tienda el app"
+                />
+            </HorizontalStackLayout>
+
+            <Frame Grid.Row="6"
+                   IsClippedToBounds="True"
+                   WidthRequest="380"
+                   CornerRadius="20"
+                    HeightRequest="225">
+                <Image  Grid.Row="6"
+                    Source="trabajadores.jpg"
+                    WidthRequest="400"
+                    HeightRequest="400"
+                    >
+            </Image>
+                </Frame>
+            
+
+        </Grid>
+            </ScrollView>
+    </ContentPage>
+    <local:Productos Title="Ordena" IconImageSource="vaso.png"></local:Productos>
+    <local:Pedido Title="Pedido" IconImageSource="carrito.png"></local:Pedido>
+</TabbedPage>

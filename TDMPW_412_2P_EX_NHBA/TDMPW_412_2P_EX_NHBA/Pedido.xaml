@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_412_2P_EX_NHBA.Pedido"
+             Title="Pedido">
+    <ScrollView>
+        <Grid  ColumnDefinitions=".33*, .33*, .33*" RowDefinitions=".40*, .30*, .30*">
+           <Frame Grid.ColumnSpan="3"
+                  HasShadow="True"
+                  BorderColor="White"
+                  CornerRadius="0"
+                  Margin="0,0,0,0">
+            </Frame>
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   VerticalOptions="Start"
+                   CornerRadius="36"
+                   WidthRequest="75"
+                   HeightRequest="75"
+                   IsClippedToBounds="True"
+                   BackgroundColor="Green"
+                   Margin="10">
+                <Image
+                    x:Name="imgCafe"
+                    Source="bebidascalientes.png"
+                    Aspect="AspectFill"
+                    HeightRequest="50"
+                    WidthRequest="50">
+                </Image>
+            </Frame>
+            <Label Grid.Column="1"
+                   Grid.Row="0"
+                   x:Name="lblTitle"
+                   Text="Café del día: Chiapas"
+                   FontFamily="coolvetica"
+                   FontSize="Subtitle"
+                   Margin="0,20,0,0"/>
+            <Label Grid.Column="1"
+                   x:Name="lblDatos"
+                   Grid.Row="0"
+                   Text=""
+                   FontSize="13"
+                   Margin="0,80,0,0"/>
+            <Label Grid.Column="1"
+                   Grid.Row="0"
+                   x:Name="lblCantidad"
+                   Text="Cantidad: 1"
+                   FontSize="13"
+                   Margin="0,135,0,0"/>
+            <Label Grid.Row="0"
+                   Grid.Column="2"
+                   Text="- $ 38.00"
+                   x:Name="lblPrice"
+                   HorizontalTextAlignment="End"
+                   FontFamily="coolvetica"
+                   FontSize="Subtitle"
+                   Margin="0,35,10,0"/>
+            <Stepper Grid.Column="1"
+                     Grid.Row="0"
+                     x:Name="stpCantidad"
+                     Margin="0,160,0,0"
+                     ValueChanged="stpCantidad_ValueChanged"
+                     />
+            <Label Grid.Row="0"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"
+                   Text="Cupón aplicado a este producto"
+                   TextColor="Green"
+                   FontFamily="coolvetica"
+                   FontSize="16"
+                   Margin="0,220,0,0"
+                   />
+
+
+            <Frame
+                Grid.Row="1"
+                Grid.ColumnSpan="3"
+                  HasShadow="True"
+                  BackgroundColor="LightGrey"
+                  BorderColor="LightGrey"
+                  CornerRadius="0"
+                  Margin="0,0,0,0">
+            </Frame>
+            <HorizontalStackLayout Grid.Row="1" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Center">
+                <Frame
+                   VerticalOptions="Start"
+                   CornerRadius="36"
+                   WidthRequest="75"
+                   HeightRequest="75"
+                   IsClippedToBounds="True"
+                   BackgroundColor="Green"
+                   Margin="0,0,0,0">
+                <ImageButton
+                    x:Name="cafe1"
+                    Clicked="cafe1_Clicked_1"
+                    Source="bebidascalientes.png"
+                    Aspect="AspectFill"
+                    HeightRequest="50"
+                    WidthRequest="50">
+                </ImageButton>
+            </Frame>
+                <Frame 
+                   VerticalOptions="Start"
+                   CornerRadius="36"
+                   WidthRequest="75"
+                   HeightRequest="75"
+                   IsClippedToBounds="True"
+                   BackgroundColor="Green"
+                   Margin="35,0,0,0"
+                   >
+                <ImageButton
+                    x:Name="cafe2"
+                    Clicked="cafe2_Clicked_1"
+                    Source="smoothies.png"
+                    Aspect="AspectFill"
+                    HeightRequest="50"
+                    WidthRequest="50">
+                </ImageButton>
+            </Frame>
+                <Frame 
+                   VerticalOptions="Start"
+                   CornerRadius="36"
+                   WidthRequest="75"
+                   HeightRequest="75"
+                   IsClippedToBounds="True"
+                   BackgroundColor="Green"
+                   Margin="35,0,0,0">
+                <ImageButton
+                        Clicked="cafe3_Clicked"
+                    x:Name="cafe3"
+                    Source="bebidasfrias.png"
+                    Aspect="AspectFill"
+                    HeightRequest="50"
+                    WidthRequest="50">
+                </ImageButton>
+            </Frame>
+            </HorizontalStackLayout>
+            <Label Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Text="TAMBIÉN TE PUEDE GUSTAR"
+                   FontFamily="helvetica neu"
+                   FontAttributes="Bold"
+                   TextColor="DarkSlateGrey"
+                   Margin="10"/>
+            <Label Text="Bebida caliente"
+                   Grid.Row="1"
+                   FontFamily="coolvetica"
+                   FontSize="20"
+                   Grid.Column="0"
+                   Margin="40,150,0,0"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"
+                   />
+            <Label Text="Bebida Smoothies"
+                   Grid.Row="1"
+                   FontFamily="coolvetica"
+                   FontSize="20"
+                   Grid.Column="1"
+                   Margin="4,150,0,0"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"
+                   />
+            
+            <Label Text="Bebidas      frías"
+                   Grid.Row="1"
+                   FontFamily="coolvetica"
+                   FontSize="20"
+                   Grid.Column="2"
+                   Margin="0,150,0,0"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Start"
+                   />
+
+
+            <Frame Grid.ColumnSpan="3"
+                   Grid.Row="2"
+                   HasShadow="True"
+                   BorderColor="White"
+                   CornerRadius="0"
+                   Margin="0,0,0,0">
+            </Frame>
+            <Label Grid.Row="2"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Text="RECOMPENSAS DISPONIBLES ‼️"
+                   FontFamily="helvetica neu"
+                   FontAttributes="Bold"
+                   TextColor="Grey"
+                   Margin="10"/>
+           <HorizontalStackLayout Margin="10" Grid.Row="2" Grid.ColumnSpan="3">
+                <Frame WidthRequest="180"
+                       HeightRequest="60"
+                       HasShadow="True"
+                       BorderColor="White"
+                       Margin="0,0,0,60"></Frame>
+                <Frame WidthRequest="180"
+                       HeightRequest="60"
+                       HasShadow="True"
+                       BorderColor="White"
+                       Margin="10,0,0,60"></Frame>
+            </HorizontalStackLayout>
+            <Label Text="☢️ Café del día"
+                   FontFamily="coolvetica"
+                   FontSize="19"
+                   Grid.Row="2"
+                   Grid.ColumnSpan="2"
+                   Margin="35,65,0,0"/>
+            <Label Text="☢️ Beb o Pan Gold (2)"
+                   FontFamily="coolvetica"
+                   FontSize="19"
+                   Grid.Row="2"
+                   Grid.ColumnSpan="3"
+                   Margin="203,65,0,0"/>
+            <Label Text="Total .............................$ 0.00"
+                   x:Name="lblTotal"
+                   FontFamily="coolvetica"
+                   FontSize="27"
+                   Grid.Row="2"
+                   Grid.ColumnSpan="3"
+                   HorizontalOptions="End"
+                   Margin="0,140,10,0"/>
+
+            <HorizontalStackLayout Grid.Row="1" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Center">
+                <Button Margin="0,0,60,0" Opacity=".1" Clicked="Button_Clicked"></Button>
+                <Button Margin="0,0,30,0" Opacity=".1" Clicked="Button_Clicked_1"></Button>
+                <Button Margin="35,0,0,0" Opacity=".1" Clicked="Button_Clicked_2"></Button>
+             </HorizontalStackLayout>
+
+    </Grid>
+
+    </ScrollView>
+</ContentPage>
