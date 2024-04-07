@@ -1,4 +1,7 @@
 # StarbucksHomeApp_.NETMAUI
+
+Frontend project.
+
 Simple replica of the home section of the Starbucks mobile app.
 
 <img width="323" alt="image" src="https://github.com/BraulioAlejandroNavarreteHorta/StarbucksHomeApp_.NETMAUI/assets/133619100/b350238f-8b8c-4184-8d9c-029af2a600c1">
